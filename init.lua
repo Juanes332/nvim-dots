@@ -865,7 +865,7 @@ require("lazy").setup({
       statusline.setup({ use_icons = vim.g.have_nerd_font })
         return "%2l:%-2v"
       end
-
+    },
     end,
   },
   {
@@ -905,7 +905,9 @@ require("lazy").setup({
 
   { import = "custom.plugins" },
  search
-}, {
+}, 
+
+{
   ui = {
     icons = vim.g.have_nerd_font and {} or {
       cmd = "⌘",
