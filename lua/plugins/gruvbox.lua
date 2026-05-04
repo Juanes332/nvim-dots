@@ -4,6 +4,7 @@ return {
     "Gentleman-Programming/gentleman-kanagawa-blur",
     name = "gentleman-kanagawa-blur",
     priority = 1000,
+    lazy = false,
     opts = function()
       require("gentleman_kanagawa_blur").setup({
         variant = "sakura", -- default variant: sakura (also available: blur)
@@ -46,7 +47,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gentleman-kanagawa-blur-sakura",
+      colorscheme = "gentleman-kanagawa-blur",
     },
   },
 }

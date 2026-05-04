@@ -4,11 +4,13 @@
 
 -- Toggle between Gentleman Kanagawa Blur variants (sakura <-> blur)
 vim.keymap.set("n", "<leader>us", function()
-  vim.cmd("colorscheme gentleman-kanagawa-blur-sakura")
+  require("gentleman_kanagawa_blur").setup({ variant = "sakura" })
+  vim.cmd("colorscheme gentleman-kanagawa-blur")
   vim.notify("Gentleman Kanagawa Sakura loaded", vim.log.levels.INFO)
 end, { desc = "Colorscheme: Gentleman Kanagawa Sakura" })
 
 vim.keymap.set("n", "<leader>ub", function()
+  require("gentleman_kanagawa_blur").setup({ variant = "blur" })
   vim.cmd("colorscheme gentleman-kanagawa-blur")
   vim.notify("Gentleman Kanagawa Blur loaded", vim.log.levels.INFO)
 end, { desc = "Colorscheme: Gentleman Kanagawa Blur" })
