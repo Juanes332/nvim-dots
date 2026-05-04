@@ -7,7 +7,7 @@ return {
     lazy = false,
     opts = function()
       require("gentleman_kanagawa_blur").setup({
-        variant = "sakura", -- default variant: sakura (also available: blur)
+        variant = "blur", -- default variant: blur (also available: sakura_night_blur)
         terminal_colors = true,
         styles = {
           comments = {},
